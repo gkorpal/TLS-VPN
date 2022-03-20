@@ -23,5 +23,9 @@
      <img alt="ug" src="seedbook.jpg"
        width="200" height="300" class="center">
   </a>
+  <a href="https://www.intel.com/content/www/us/en/support/articles/000022547/programs.html">
+     <img alt="ug" src="intel-ed.png"
+       width="200" height="200" class="center">
+  </a>
    </center>
  </p>
