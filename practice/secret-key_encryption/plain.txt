@@ -1,0 +1,11 @@
+The learning objective of this lab is for students to get familiar with the concepts in the secret-key 
+encryption and some common attacks on encryption. From this lab, students will gain a first-hand
+experience on encryption algorithms, encryption modes, paddings, and initial vector (IV). 
+Moreover, students will be able to use tools and write programs to encrypt/decrypt messages.
+Many common mistakes have been made by developers in using the encryption algorithms and modes. These 
+mistakes weaken the strength of the encryption, and eventually lead to vulnerabilities. This lab
+exposes students to some of these mistakes, and ask students to launch attacks to exploit those
+vulnerabilities. Please answer the following question: How much information can you recover by
+decrypting the corrupted file, if the encryption mode is ECB, CBC, CFB, or OFB, respectively?
+Please answer this question before you conduct this task, and then find out whether your 
+answer is correct or wrong after you finish this task. Please provide justification.
