@@ -1,5 +1,5 @@
-
 #!/bin/bash
+
 ##############################################################################
 #
 # Code: Classical Crypto Operations
@@ -10,7 +10,7 @@
 #         Thammasat University
 #         Bangkok, Thailand
 #         steven.gordon@ieee.org
-# URL: source: https://sandilands.info/sgordon/classical-ciphers-frequency-analysis-examples 
+# URL: https://sandilands.info/sgordon/classical-ciphers-frequency-analysis-examples 
 #
 # Description:
 # Set of classical cryptographic operations for demonstrate principles
