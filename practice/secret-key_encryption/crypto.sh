@@ -1,4 +1,3 @@
-source: https://sandilands.info/sgordon/classical-ciphers-frequency-analysis-examples
 
 #!/bin/bash
 ##############################################################################
@@ -11,6 +10,7 @@ source: https://sandilands.info/sgordon/classical-ciphers-frequency-analysis-exa
 #         Thammasat University
 #         Bangkok, Thailand
 #         steven.gordon@ieee.org
+# URL: source: https://sandilands.info/sgordon/classical-ciphers-frequency-analysis-examples 
 #
 # Description:
 # Set of classical cryptographic operations for demonstrate principles
