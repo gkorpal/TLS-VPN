@@ -25,11 +25,11 @@
   </a>
   <a href="https://seedsecuritylabs.org/">
      <img alt="SEED Labs" src="seed_labs.png"
-       width="500" height="150" class="center">
+       width="415" height="125" class="center">
   </a>
   <a href="https://www.intel.com/content/www/us/en/support/articles/000022547/programs.html">
      <img alt="Intel Security Curriculum Program" src="intel-ed.png"
-       width="150" height="150" class="center">
+       width="125" height="125" class="center">
   </a>
    </center>
  </p>
