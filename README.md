@@ -33,3 +33,5 @@
   </a>
    </center>
  </p>
+ 
+ **Equivalent Courses:** [CS4642 @ VirginiaTech](https://courses.cs.vt.edu/~cs4264/) | [CS461 @ UIUC](https://courses.engr.illinois.edu/cs461/sp2018/) | [CMSC33250 @ UChicago](https://www.classes.cs.uchicago.edu/archive/2017/fall/23200-1/index.html) | [EECS398 @ UMichigan](https://www.eecs.umich.edu/courses/eecs398.f10/) | [CS3710 @ UVirginia](https://aaronbloomfield.github.io/ics/readme.html) 
