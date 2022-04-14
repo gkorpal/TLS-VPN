@@ -15,6 +15,10 @@
      <img alt="ug" src="stinson.jpg"
        width="150" height="225" class="center">
   </a>
+    <a href="https://www.securitybook.net/">
+     <img alt="ug" src="goodrich-tamassia.jpg"
+       width="150" height="225" class="center">
+  </a>
   <a href="https://www.goodreads.com/book/show/4505093-network-security">
      <img alt="ug" src="Kaufman.jpg"
        width="150" height="225" class="center">
