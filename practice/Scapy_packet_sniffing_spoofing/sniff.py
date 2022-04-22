@@ -1,9 +1,11 @@
 #!/usr/bin/python
 from scapy.all import *
 
-a = IP()
-a.show()
+def print_pkt(pkt):
+  pkt.show()
 
-# make mycode.py executable (another way to run python programs)
-# $ chmod a+x mycode.py
-# $ sudo ./mycode.py
+pkt = sniff(filter='icmp',prn=print_pkt)
+
+# make sniff.py executable (another way to run python programs)
+# $ chmod a+x sniff.py
+# $ sudo ./sniff.py
