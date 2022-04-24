@@ -3,7 +3,7 @@
 import socket, ssl, sys, pprint
 
 hostname = sys.argv[1]
-port = 443
+port = 443                                          # default port for HTTPS
 cadir = '/etc/ssl/certs'
 
 # Set up the TLS context 
