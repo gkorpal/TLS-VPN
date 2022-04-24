@@ -16,27 +16,27 @@ context.check_hostname = True
 # Create TCP connection 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect((hostname, port))
-#print("TCP connection ready...")
+print("TCP connection ready...")
 
 # Add the TLS
 ssock = context.wrap_socket(sock, server_hostname=hostname, 
                             do_handshake_on_connect=False)
 ssock.do_handshake()   # Start the handshake
-#print("=== Cipher used: {}".format(ssock.cipher()))
-#print("=== Server hostname: {}".format(ssock.server_hostname))
-#print("=== Server certificate:")
-#pprint.pprint(ssock.getpeercert())
-#pprint.pprint(context.get_ca_certs())
-#print("TLS handshake done...")
+print("=== Cipher used: {}".format(ssock.cipher()))
+print("=== Server hostname: {}".format(ssock.server_hostname))
+print("=== Server certificate:")
+pprint.pprint(ssock.getpeercert())
+pprint.pprint(context.get_ca_certs())
+print("TLS handshake done...")
 
 # Send HTTP Request to Server
 request = b"GET / HTTP/1.0\r\nHost: " + \
     hostname.encode('utf-8') + b"\r\n\r\n"
 ssock.sendall(request)
-#print("Sent HTTP request...")
+print("Sent HTTP request...")
 
 # Read HTTP Response from Server
-#print("Reading HTTP response")
+print("Reading HTTP response")
 response = ssock.recv(2048)
 while response:
     pprint.pprint(response.split(b"\r\n"))
@@ -47,4 +47,4 @@ ssock.shutdown(socket.SHUT_RDWR)
 ssock.close()
 
 ####################
-# usage: ./client.py example.com > example.html
+# usage: ./client.py example.com 
