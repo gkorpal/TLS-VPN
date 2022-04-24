@@ -22,11 +22,11 @@ print("TCP connection ready...")
 ssock = context.wrap_socket(sock, server_hostname=hostname, 
                             do_handshake_on_connect=False)
 ssock.do_handshake()   # Start the handshake
-print("=== Cipher used: {}".format(ssock.cipher()))
-print("=== Server hostname: {}".format(ssock.server_hostname))
-print("=== Server certificate:")
-pprint.pprint(ssock.getpeercert())
-pprint.pprint(context.get_ca_certs())
+#print("=== Cipher used: {}".format(ssock.cipher()))
+#print("=== Server hostname: {}".format(ssock.server_hostname))
+#print("=== Server certificate:")
+#pprint.pprint(ssock.getpeercert())
+#pprint.pprint(context.get_ca_certs())
 print("TLS handshake done...")
 
 # Send HTTP Request to Server
