@@ -3,9 +3,10 @@
 import socket, ssl, sys, pprint
 
 hostname = sys.argv[1]
-port = 443                                          # default port for HTTPS
+# port = 443                                          # default port for HTTPS
+port = 4433			                                  		# modified to work with server.py
 # cadir = '/etc/ssl/certs'
-cadir = './certs'
+cadir = './certs'                                     # modified to work with server.py
 
 # Set up the TLS context 
 context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)      # For Ubuntu 16.04 VM
