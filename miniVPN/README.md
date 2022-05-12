@@ -2,8 +2,8 @@ A Virtual Private Network (VPN) implementation consists of two parts: building a
 
 The book, "Computer \& Internet Security: A Hands-on Approach" by Wenliang Du, served as a great resource. Following is the VM network setup:
 
-![VM](miniVPN/Host2Gateway.jpg)
+![VM](/miniVPN/Host2Gateway.jpg)
 
 We will get the following VPN tunnel:
 
-![tunnel](miniVPN/ClientServerTunnel.jpg)
+![tunnel](/miniVPN/ClientServerTunnel.jpg)
