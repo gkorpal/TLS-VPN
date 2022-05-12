@@ -2,7 +2,7 @@ I took the courses CSC 566 (Computer Security) taught by Sazzadur Rahaman and EC
 
 For ECE 571 course, I built a SSL/TLS VPN using OpenSSL in SEEDUbuntu 16.04 virtual machine. However, I can't share the project report since the same assignment is given every year. Therefore, in the subfolders above, I have shared the source codes based on the [SEEDLab](https://seedsecuritylabs.org/Labs_16.04/Networking/VPN/) I used for this project. 
 
-Topics covered during these courses:
+Topics covered in these courses:
 * Security Mindset (rational paranoia, OSI security architechture)
 * Cryptography ([classical cryptosystems](/practice/secret-key_encryption/vigenere.pdf), perfect secrecy, one-time pad, Feistel cipher (DES, 3DES), AES, [block cipher operation modes](/practice/secret-key_encryption/Crypto_Encryption.pdf), [PRNG](/practice/pseudo_random_number_generation/) (LSFR, LCG), [hash functions](/practice/MD5_Collision_Attack/), [RSA](/practice/RSA_Encryption_and_Signature/), Diffie-Hellman (perfect forward secrecy), homomorphic encryption, authenticated encryption (HMAC))
 * System Security (access control, MMU, IO-MMU, Bell-LaPadula, Biba, SELinux, Virus detection (halting problem), Intrusion Detection System)
