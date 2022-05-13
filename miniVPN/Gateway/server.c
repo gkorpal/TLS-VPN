@@ -209,8 +209,8 @@ int main (int argc, char * argv[]) {
   SSL_CTX_set_verify(ctx, SSL_VERIFY_NONE, NULL);
 
   // Step 2: Set up the server certificate and private key
-  SSL_CTX_use_certificate_file(ctx, "../server_cert/server-cert.pem", SSL_FILETYPE_PEM);
-  SSL_CTX_use_PrivateKey_file(ctx, "../server_cert/server-key.pem", SSL_FILETYPE_PEM);
+  SSL_CTX_use_certificate_file(ctx, "./server_cert/server-cert.pem", SSL_FILETYPE_PEM);
+  SSL_CTX_use_PrivateKey_file(ctx, "./server_cert/server-key.pem", SSL_FILETYPE_PEM);
   
   // Step 3: Create a new SSL structure for a connection
   ssl = SSL_new (ctx);
