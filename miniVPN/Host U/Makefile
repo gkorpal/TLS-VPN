@@ -1,5 +1,5 @@
 all: 
-	gcc -o auth-vpntlsclient auth-vpntlsclient.c -lssl -lcrypto
+	gcc -o client client.c -lssl -lcrypto
 
 clean: 
-	rm auth-vpntlsclient
+	rm client
