@@ -1,5 +1,5 @@
 *************************************************************************
-* auth-vpntlsclient.c vpn client program via TLS with user authentication 
+* client.c vpn client program via TLS with user authentication 
 *************************************************************************
 
 --------------------------
@@ -14,8 +14,8 @@ To run the client:
 
 First make sure you have CA certificates in ca_client and server hostname is matched to IP in /etc/hosts
 
-$ sudo ./auth-vpntlsclient [server hostname] [server port]
+$ sudo ./client [server hostname] [server port]
 
 Then in new terminal configure routing
 
-$ ../client-config.sh
+$ ./client-config.sh
