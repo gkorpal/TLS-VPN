@@ -1,5 +1,5 @@
 *************************************************************************
-* auth-vpntlsserver.c vpn server program via TLS with user authentication  
+* server.c vpn server program via TLS with user authentication  
 *************************************************************************
 
 --------------------------
@@ -13,11 +13,8 @@ To run the server:
 --------------------------
 Make sure the internal network is configured. Run intnet-G.sh if needed.
 
-$ sudo ./auth-vpntlsserver [port number]
+$ sudo ./server [port number]
 
 Now in new terminal add routing capabilities
 
-$ ../server-config.sh
-
-
-
+$ ./server-config.sh
