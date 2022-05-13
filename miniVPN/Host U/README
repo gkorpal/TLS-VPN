@@ -12,7 +12,16 @@ $ make
 To run the client: 
 --------------------------
 
-First make sure you have CA certificates in ca_client and server hostname is matched to IP in /etc/hosts
+First make sure you have CA certificates in ca_client 
+
+You will also need to link .pem with its hash:
+
+$ openssl x509 -in ca-cert.pem -noout -subject_hash
+949e5f5e
+$ ln -s ca-cert.pem 949e5f5e.0
+
+make sure that the server hostname is matched to IP in /etc/hosts
+
 
 $ sudo ./client [server hostname] [server port]
 
