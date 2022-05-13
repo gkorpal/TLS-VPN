@@ -9,14 +9,18 @@ The book, "Computer \& Internet Security: A Hands-on Approach" by Wenliang Du, s
 All code was tested on SEEDUbuntu 16.04 32bit Virtual Machines running on VirtualBox 6.0.4. The compilation and run instructions are available in the following README files accompanying the code.
 
 ### Run the VPN
-Make sure that all the three VMs are configured properly. If not, then we can run the shell scripts intnet-V.sh and intnet-G.sh in Host V and Gateway, respectively. Moreover, the server and CA certificates must be set up properly.
+Make sure that all the three VMs are configured properly. If not, then we can run the shell scripts `intnet-V.sh` and `intnet-G.sh` in Host V and Gateway, respectively. Moreover, the server and CA certificates must be set up properly.
 
-In Gateway, we first compile and run server.c program, enter PEM pass phrase dees and then run server-config.sh (in a separate terminal) which will assign IP address 192.168.53.1/24 to tun0 interface and enable routing capabilities of the server.
+In Gateway, we first compile and run `server.c` program, enter PEM pass phrase `dees` and then run `server-config.sh` (in a separate terminal) which will assign IP address `192.168.53.1/24` to `tun0` interface and enable routing capabilities of the server.
 
-Next, in Host U, we first compile and run client.c program. It authenticates the server using ca_cert and then asks for username and password from server's shadow file (here, seed and dees, respectively).
+Next, in Host U, we first compile and run `client.c` program. It authenticates the server using `ca_cert` and then asks for username and password from server's shadow file (here, `seed` and `dees`, respectively).
 
-Once the user authentication is done, we can run client-config.sh (in a separate terminal) to assign IP address 192.168.53.5/24 to tun0 interface and assign tun0 for packets destined to the private network 192.168.60.0/24.
+Once the user authentication is done, we can run `client-config.sh` (in a separate terminal) to assign IP address `192.168.53.5/24` to `tun0` interface and assign `tun0` for packets destined to the private network `192.168.60.0/24`.
 
 We will get the following secure VPN tunnel:
 
 ![tunnel](/miniVPN/ClientServerTunnel.jpg)
+
+### Testing
+
+VPN can be tested using Wireshark by executing `ping` and `telnet` operation between Host U (VPN client) and Host V (client on private network) via Gateway (VPN server).
