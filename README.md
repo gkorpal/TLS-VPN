@@ -1,6 +1,6 @@
 I took the courses CSC 566 (Computer Security) taught by Sazzadur Rahaman and ECE 571 (Fundamentals of Information and Network Security) taught by Ming Li during Spring 2022 (graduate @ UArizona).
 
-For ECE 571 course, I built a TLS/SSL VPN using OpenSSL in SEEDUbuntu 16.04 virtual machine. However, I can't share the project report since the same assignment is given every year. Therefore, in the subfolders above, I have shared the source codes based on the [SEEDLab](https://seedsecuritylabs.org/Labs_16.04/Networking/VPN/) I used for this project. My final VPN server and client programs offer the following features: 
+For ECE 571 course, I built a TLS/SSL VPN using OpenSSL in SEEDUbuntu 16.04 virtual machine. However, I can't share the project report since the same assignment is given every year. Therefore, in the subfolders above, I have shared the source codes based on the [SEEDLab](https://seedsecuritylabs.org/Labs_16.04/Networking/VPN/) I used for this project. My final VPN server and client programs offer the following functionalities: 
 *  TLS/SSL certificate-based authentication of VPN server (checks certificate validity, CA's signature, and identity information).
 *  Shadow file-based authentication of the VPN client (matches username and password hash).
 *  Encrypted tunnel traffic using AES-256 GCM where each encrypted block contains a MAC generated using SHA-384.
