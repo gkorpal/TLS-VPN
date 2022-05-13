@@ -2,7 +2,7 @@
 A Virtual Private Network (VPN) implementation consists of two parts: building a tunnel and securing the tunnel. In this project I implemented a VPN in which an IP tunnel at the transport layer is built using TUN/TAP, and the tunnel is secured using TLS/SSL (traffic encryption and server authentication) and shadow file (user authentication).
 
 The book, "Computer \& Internet Security: A Hands-on Approach" by Wenliang Du, served as a great resource. My final VPN server and client programs offer the following functionalities: 
-*  TLS/SSL certificate-based authentication of VPN server (checks certificate validity, CA's signature, and identity information).
+*  TLS/SSL certificate-based authentication of VPN server (checks certificate validity, CA's signature, and identity information -- created using OpenSSL).
 *  Shadow file-based authentication of the VPN client (matches username and password hash).
 *  Encrypted tunnel traffic using AES-256 GCM where each encrypted block contains a MAC generated using SHA-384.
 
