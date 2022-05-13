@@ -1,12 +1,16 @@
 ### Introduction
 A Virtual Private Network (VPN) implementation consists of two parts: building a tunnel and securing the tunnel. In this project I implemented a VPN in which an IP tunnel at the transport layer is built using TUN/TAP, and the tunnel is secured using TLS/SSL (traffic encryption and server authentication) and shadow file (user authentication).
 
-The book, "Computer \& Internet Security: A Hands-on Approach" by Wenliang Du, served as a great resource. Following is the VM network setup:
+The book, "Computer \& Internet Security: A Hands-on Approach" by Wenliang Du, served as a great resource. My final VPN server and client programs offer the following functionalities: 
+*  TLS/SSL certificate-based authentication of VPN server (checks certificate validity, CA's signature, and identity information).
+*  Shadow file-based authentication of the VPN client (matches username and password hash).
+*  Encrypted tunnel traffic using AES-256 GCM where each encrypted block contains a MAC generated using SHA-384.
 
-![VM](/miniVPN/Host2Gateway.jpg)
 
 ### Platform
-All code was tested on SEEDUbuntu 16.04 32bit Virtual Machines running on VirtualBox 6.0.4. The compilation and run instructions are available in the following README files accompanying the code.
+All code was tested on SEEDUbuntu 16.04 32bit Virtual Machines running on VirtualBox 6.0.4. The compilation and run instructions are available in the following README files accompanying the code. Following is the VM network setup:
+
+![VM](/miniVPN/Host2Gateway.jpg)
 
 ### Run the VPN
 Make sure that all the three VMs are configured properly. If not, then we can run the shell scripts `intnet-V.sh` and `intnet-G.sh` in Host V and Gateway, respectively. Moreover, the server and CA certificates must be set up properly.
