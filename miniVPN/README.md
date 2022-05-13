@@ -27,4 +27,4 @@ We will get the following secure VPN tunnel:
 
 ### Testing
 
-VPN can be tested using Wireshark by executing `ping` and `telnet` operation between Host U (VPN client) and Host V (client on private network) via Gateway (VPN server).
+VPN can be tested by using Wireshark to observe packets for `ping` and `telnet` operation between Host U (VPN client) and Host V (client on private network) via Gateway (VPN server).
