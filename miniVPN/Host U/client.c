@@ -14,7 +14,7 @@
 #include <ctype.h>
 
 #define CHK_SSL(err) if ((err) < 1) { ERR_print_errors_fp(stderr); exit(2); }
-#define CA_DIR "../ca_client" 
+#define CA_DIR "ca_client" 
 
 #define BUFF_SIZE 2000
 
